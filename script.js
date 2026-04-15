@@ -85,3 +85,4 @@ for (let i = 0; i < canvas.height; i += 20) {
 }
 let tbody = document.querySelector("#tabla tbody");
 let paso = 0;
+tbody.innerHTML = "";
