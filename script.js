@@ -11,3 +11,6 @@ window.onload = function() {
     }
 
 }
+function plot(x, y) {
+    ctx.fillRect(x * 20, y * 20, 20, 20);
+}
