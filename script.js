@@ -39,6 +39,16 @@ function bresenham(x0, y0, x1, y1) {
             err += dx;
             y0 += sy;
         }
+        let fila = `<tr>
+<td>${paso}</td>
+<td>${x0}</td>
+<td>${y0}</td>
+<td>${err}</td>
+<td>${e2}</td>
+</tr>`;
+tbody.innerHTML += fila;
+
+paso++;
     }
 }
 function dibujar() {
@@ -73,3 +83,5 @@ for (let i = 0; i < canvas.width; i += 20) {
 for (let i = 0; i < canvas.height; i += 20) {
     ctx.fillText(i / 20, 5, canvas.height - i);
 }
+let tbody = document.querySelector("#tabla tbody");
+let paso = 0;
