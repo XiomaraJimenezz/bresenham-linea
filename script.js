@@ -51,3 +51,6 @@ function dibujar() {
     bresenham(x0, y0, x1, y1);
 }
 ctx.clearRect(0, 0, canvas.width, canvas.height);
+function plot(x, y) {
+    ctx.fillRect(x * 20, canvas.height - y * 20, 20, 20);
+}
