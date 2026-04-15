@@ -50,3 +50,4 @@ function dibujar() {
 
     bresenham(x0, y0, x1, y1);
 }
+ctx.clearRect(0, 0, canvas.width, canvas.height);
