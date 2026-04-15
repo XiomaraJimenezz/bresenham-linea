@@ -66,3 +66,10 @@ function dibujarEjes() {
     ctx.lineTo(0, canvas.height);
     ctx.stroke();
 }
+for (let i = 0; i < canvas.width; i += 20) {
+    ctx.fillText(i / 20, i, canvas.height - 5);
+}
+
+for (let i = 0; i < canvas.height; i += 20) {
+    ctx.fillText(i / 20, 5, canvas.height - i);
+}
