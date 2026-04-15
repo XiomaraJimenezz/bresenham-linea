@@ -86,3 +86,7 @@ for (let i = 0; i < canvas.height; i += 20) {
 let tbody = document.querySelector("#tabla tbody");
 let paso = 0;
 tbody.innerHTML = "";
+if (isNaN(x0) || isNaN(y0) || isNaN(x1) || isNaN(y1)) {
+    alert("Ingrese valores válidos");
+    return;
+}
